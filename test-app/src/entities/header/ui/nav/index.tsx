@@ -1,10 +1,9 @@
 import React from "react";
-
-import classes from './nav.module.scss';
 import { useRouter } from "next/router";
+// import classes from './nav.module.scss';
+
 
 export default function Navigation() {
-    const { push } = useRouter();
 
     const navigationButtons = [
         {
@@ -30,13 +29,13 @@ export default function Navigation() {
     ]
     return (
         <nav>
-            <ul className={`grid space-between ${classes.list}`}>
+            <ul className={`grid space-between `}>
                 {
                     navigationButtons.map((button) => {
                         const {key, name, link} = button;
                         return (
                             <li key={key}>
-                                <a onClick={() => push(link)} className={`link text-16 text-color--light`}>
+                                <a onClick={() => {}} className={`link text-16 text-color--light`}>
                                     {name}
                                 </a>
                             </li>

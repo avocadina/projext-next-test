@@ -3,6 +3,8 @@
 @import "./text.scss";
 @import "./normalize.scss";
 
+$font-family: "Inter", sans-serif;
+
 button {
 	outline: none;
 	border: none;
@@ -12,6 +14,7 @@ button {
 
 html {
 	scroll-behavior: smooth;
+	font-family: $font-family;
 }
 
 * {
@@ -29,7 +32,8 @@ a {
 }
 
 p {
-	color: $text-neutral-primary;
+	margin: 0;
+	padding: 0;
 }
 
 input,
@@ -43,14 +47,6 @@ img {
 
 ul {
 	list-style-type: none;
-}
-
-table {
-	border-collapse: collapse !important;
-
-	td {
-		border: $border;
-	}
 }
 
 input::-webkit-outer-spin-button,
