@@ -1,0 +1,13 @@
+$font-family: 'Inter', sans-serif;
+$second-family: 'Sen', sans-serif;
+
+p,
+a,
+.title {
+    color: $light;
+    font-family: $font-family;
+}
+
+.text-16 {
+    font-size: 16px;
+}

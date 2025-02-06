@@ -1,7 +1,8 @@
-export default function Home() {
-  return (
-    <div className="">
+"use client";
+import React from "react";
 
-    </div>
-  )
+import HomePage from "~/src/pages/home-page/home-page";
+
+export default function Home() {
+  return <HomePage />;
 }

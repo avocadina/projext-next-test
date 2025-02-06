@@ -1,8 +1,11 @@
+import React from "react";
 
-export default function MainPage() {
+import Header from "~/src/entities/header/ui";
+
+export default function HomePage() {
     return (
-        <div className="">
-            
-        </div>
+        <>
+            <Header />
+        </>
     )
 }

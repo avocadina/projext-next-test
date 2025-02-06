@@ -1,0 +1,64 @@
+@import "./sizes.scss";
+@import "./colors.scss";
+@import "./text.scss";
+@import "./normalize.scss";
+
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	vertical-align: baseline;
+	font-family: $font-family;
+}
+
+a {
+    color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+p {
+	color: $text-neutral-primary;
+}
+
+input,
+textarea {
+	appearance: none;
+}
+
+img {
+	user-select: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+table {
+	border-collapse: collapse !important;
+
+	td {
+		border: $border;
+	}
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
